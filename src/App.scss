@@ -1,0 +1,76 @@
+body {
+  background: #11506c;
+  color: white;
+  font-family: sans-serif;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control {
+  background: rgba(0, 0, 0, 0.509);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+
+  h2,
+  h3 {
+    margin: 5px;
+  }
+
+  h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  input {
+    width: 25rem;
+  }
+
+  button {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background: #d28fee;
+    }
+  }
+
+  .active {
+    color: white;
+    background: #4e1367;
+  }
+}
+
+.keyboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+.settings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+
+  > div {
+    flex: 1;
+  }
+}
